@@ -1,0 +1,29 @@
+.div1 {
+    background-color: rgba(0, 0, 0, 0.762);
+    border-radius: 6px;
+    width: 170px;
+    height: 50px;
+    margin-top: 5px;
+    font-family: cursive;
+    font-size: 26px;
+}
+
+.con1 {
+    background-color: white;
+    border-radius: 6px;
+}
+
+.con2 {
+    height: 800px;
+    width: 10000px;
+    border-radius: 6px;
+}
+
+
+
+@media (min-width: 992px) {
+    body {
+      overflow: auto !important;
+    }
+}
+

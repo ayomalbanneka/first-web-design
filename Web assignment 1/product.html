@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | New Tech</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="other css js/bootstrap.min.css" />
+    <link rel="stylesheet" href="other css js/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="other css js/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand bi bi-alt text-warning" href="index.html">New Tech</a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="product.html">Products</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu text-bg-dark">
+                            <li><a class="dropdown-item text-light text-bg-dark " href="smartphones.html">Smartphones and
+                                    Tablets</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Computers and Laptops</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Audio Devices</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Gaming Consoles and
+                                    Accessories</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Cameras and Photography
+                                    Equipment</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Smart Home Appliances</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">About Us</a>
+                    </li>
+
+                </ul>
+
+
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle ms-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-fill" style="color: rgb(242, 244, 247);"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item bi bi-person-circle" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item bi bi-gear-wide" href="#">Settings</a></li>
+                            <li><a class="dropdown-item bi bi-door-open" href="index.html">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a class="btn text-light" data-bs-toggle="offcanvas" onclick="sell();" role="button"
+                    aria-controls="offcanvasExample">Sell
+                    <i class="" style="color: rgb(242, 244, 247);"></i>
+                </a>
+                
+                <a class="btn" data-bs-toggle="offcanvas" onclick="cart();" href="cart.html" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-cart" style="color: rgb(242, 244, 247);"></i>
+                </a>
+
+                <a class="btn" data-bs-toggle="offcanvas" onclick="watchlist();"  role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-bag-heart" style="color: rgb(242, 244, 247);"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="card-group">
+        <div class="card" style="width: 18rem; height: 26rem;">
+            <img src="Resources/pixel-7-pro-s22-ultra-iphone-14-scaled.jpg" class="card-img-top"
+                alt="smartphones and accesories">
+            <div class="card-body">
+                <h5 class="card-title">Smartphones and Tablets</h5>
+                <p class="card-text">Stay connected on-the-go with cutting-edge smartphones and versatile tablets
+                    for productivity and entertainment.</p>
+                <a href="smartphones.html" class="btn btn-primary bi bi-shop">Shop</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; height: 26rem;">
+            <img src="Resources/slider1.jpg" class="card-img-top" alt="Laptop">
+            <div class="card-body">
+                <h5 class="card-title">Computers and Laptops</h5>
+                <p class="card-text">Powerful computing solutions for work and play, from desktops to ultra-portable
+                    laptops.</p>
+                <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; height: 26rem;">
+            <img src="Resources/save-vs-splurge-audio-devices-640-1625825582.jpg" class="card-img-top"
+                alt="audio Devices">
+            <div class="card-body">
+                <h5 class="card-title">Audio Devices</h5>
+                <p class="card-text">Immerse yourself in high-quality sound with headphones, earbuds, and speakers
+                    designed for music lovers and audiophiles.</p>
+                <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card" style="width: 18rem; height: 26rem;">
+            <img src="Resources/gaming.png" class="card-img-top" alt="Gaming">
+            <div class="card-body">
+                <h5 class="card-title">Gaming Consoles and Accessories</h5>
+                <p class="card-text">Level up your gaming experience with the latest consoles, controllers, and
+                    accessories for every gamer.</p>
+                <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; height: 26rem;">
+            <img src="Resources/AdobeStock_143047604_copy_1_1024x.jpg" class="card-img-top" alt="Cameras">
+            <div class="card-body">
+                <h5 class="card-title">Cameras and Photography Equipment</h5>
+                <p class="card-text">Capture life's moments with precision and creativity using cameras, lenses, and
+                    photography accessories.</p>
+                <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; height: 26rem;">
+            <img src="Resources/Best-Smart-Home-Devices-for-2021.jpg" class="card-img-top" alt="smart home Devices">
+            <div class="card-body">
+                <h5 class="card-title">Smart Home Appliances</h5>
+                <p class="card-text">Simplify household tasks with smart appliances like refrigerators and vacuum
+                    cleaners that enhance efficiency and convenience</p>
+                <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="other css js/bootstrap.bundle.min.js"></script>
+    <script src="other css js/jquery-3.5.1.js"></script>
+    <script src="other css js/jquery.dataTables.min.js"></script>
+    <script src="other css js/dataTables.bootstrap5.min.js"></script>
+    <script src="other css js/script.js"></script>
+</body>
+
+</html>

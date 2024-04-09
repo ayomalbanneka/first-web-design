@@ -1,0 +1,95 @@
+body {
+    background: url("Resources/1635942900-106730.jpg");
+    background-size: cover;
+}
+
+
+
+.topnav {
+    background-color: #121010bb;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #00fa007a;
+    color: rgb(244, 238, 238);
+}
+
+
+.topnav a.active {
+    background-color: #0e7f8e;
+    color: white;
+}
+
+img {
+    width: 1500px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.div1 {
+    background-color: rgba(0, 0, 0, 0.762);
+    border-radius: 6px;
+    width: 170px;
+    height: 50px;
+    margin-top: 5px;
+    font-family: cursive;
+    font-size: 26px;
+}
+
+.button1 {
+    background-color: #065ce6;
+    display: flex;
+    justify-content: flex-end;
+    width: 10vh;
+}
+
+.button2 {
+    background-color: rgba(218, 62, 35, 0.803);
+    display: flex;
+    justify-content: flex-end;
+    width: 11vh;
+    
+}
+
+.con1 {
+    background-color: white;
+    height: 950px;
+    width: 10000px;
+    border-radius: 6px;
+}
+
+.con2 {
+    height: 800px;
+    width: 10000px;
+    border-radius: 6px;
+}
+
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(2, 56, 95);
+    color: white;
+}
+
+@media (min-width: 992px) {
+    body {
+      overflow: auto !important;
+    }
+}
+
+.cname{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

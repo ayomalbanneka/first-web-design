@@ -1,0 +1,37 @@
+.con1 {
+    background-color: rgba(81, 77, 77, 0.211);
+    border-radius: 6px;
+    height: 690px;
+}
+
+.body {
+    background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );
+    background-size: 100%;
+}
+
+.topnav {
+    background-color: #121010bb;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #00fa007a;
+    color: rgb(244, 238, 238);
+}
+
+
+.topnav a.active {
+    background-color: #0e7f8e;
+    color: white;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | New Tech</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="other css js/bootstrap.min.css" />
+    <link rel="stylesheet" href="other css js/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="other css js/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand bi bi-alt text-warning" href="index.html">New Tech</a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="product.html">Products</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu text-bg-dark">
+                            <li><a class="dropdown-item text-light text-bg-dark " href="smartphones.html">Smartphones and
+                                    Tablets</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Computers and Laptops</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Audio Devices</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Gaming Consoles and
+                                    Accessories</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Cameras and Photography
+                                    Equipment</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Smart Home Appliances</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">About Us</a>
+                    </li>
+
+                </ul>
+
+
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle ms-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-fill" style="color: rgb(242, 244, 247);"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item bi bi-person-circle" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item bi bi-gear-wide" href="#">Settings</a></li>
+                            <li><a class="dropdown-item bi bi-door-open" href="index.html">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a class="btn text-light" data-bs-toggle="offcanvas" onclick="sell();" role="button"
+                    aria-controls="offcanvasExample">Sell
+                    <i class="" style="color: rgb(242, 244, 247);"></i>
+                </a>
+
+                <a class="btn" data-bs-toggle="offcanvas" onclick="cart();" href="cart.html" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-cart" style="color: rgb(242, 244, 247);"></i>
+                </a>
+
+                <a class="btn" data-bs-toggle="offcanvas" onclick="watchlist();" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-bag-heart" style="color: rgb(242, 244, 247);"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="con1 container">
+        <div class="container-fluid">
+            <div class="div2">
+                <div class="col-12 text-center mt-5 mb-5 ">
+                    <h2 class="fw-bold text-dark fs-14">Smartphones and Tablets</h2>
+                </div>
+            </div>
+        </div><br/><br/><br/><br/>
+    
+        <section class="search-sec">
+            <div class="container">
+                <form action="#" method="post" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                        <option>Select Brand</option>
+                                        <option>iPhone</option>
+                                        <option>Samsung</option>
+                                        <option>Google</option>
+                                        <option>Lenovo</option>
+                                        <option>Blackberry</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <input type="text" class="form-control search-slt" placeholder="Color">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <input type="text" class="form-control search-slt" placeholder="Storage">
+                                </div>
+                                
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+
+
+        <div class="card-group mt-3">
+            <div class="card" style="width: 18rem; height: 26rem;">
+                <img src="Resources/images.jpeg" class="card-img-top" alt="smartphones and accesories">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung Galaxy S23 Ultra </h5>
+                    <p class="card-text">Meet the new Galaxy S23 Ultra, designed with the planet in mind and equipped
+                        with a
+                        built-in S Pen, Nightography camera and powerful chip.</p>
+                    <a href="item1.html" class="btn btn-primary bi bi-shop">Shop</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 26rem;">
+                <img src="Resources/iPhone-15-Pro-Lineup-Feature.jpg" class="card-img-top" alt="Laptop">
+                <div class="card-body">
+                    <h5 class="card-title">iPhone 15 Pro Max</h5>
+                    <p class="card-text">The new iPhone 15 Pro and iPhone 15 Pro Max are built with aerospace-grade
+                        titanium for our lightest, most powerful Pro models ever.</p>
+                    <a href="item2.html" class="btn btn-primary bi bi-shop">Shop</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 26rem;">
+                <img src="Resources/pixel-7-pro-s22-ultra-iphone-14-scaled.jpg" class="card-img-top"
+                    alt="audio Devices">
+                <div class="card-body">
+                    <h5 class="card-title">Google Pixel 8</h5>
+                    <p class="card-text">The Pixel 8 and Pixel 8 Pro are a pair of Android smartphones designed,
+                        developed, and marketed by Google as part of the Google Pixel product line.</p>
+                    <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card" style="width: 18rem; height: 26rem;">
+                <img src="Resources/Samsung_Galaxy_Tab_S9_Ultra_1687246138_0_017.jpg" class="card-img-top" alt="Gaming">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung Galaxy Tab S9 Series</h5>
+                    <p class="card-text">Meet the Samsung Galaxy Tab S9, S9+, S9 Ultra tablet. Explore Samsung's newest
+                        durable tablets with crystal clear AMOLED screen, new creative capabilities.</p>
+                    <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 29rem;">
+                <img src="Resources/ipad-pro_overview__glcw458o4byq_og.png" class="card-img-top" alt="Cameras">
+                <div class="card-body">
+                    <h5 class="card-title">iPad Pro</h5>
+                    <p class="card-text">Capture life's moments with precision and creativity using cameras, lenses, and
+                        photography accessories.</p>
+                    <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 26rem;">
+                <img src="Resources/c84b73dcf78b9b019d1ea3ac5717a542.jpg" class="card-img-top" alt="smart home Devices">
+                <div class="card-body">
+                    <h5 class="card-title">Lenovo Tab P11</h5>
+                    <p class="card-text">Use as a gaming tablet or browse with ease, and experience less lag via the
+                        Qualcomm® Snapdragon™ 662 Octa-Core processor with up to 2.0GHz main frequency.
+                    </p>
+                    <a href="#" class="btn btn-primary bi bi-shop">Shop</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="other css js/bootstrap.bundle.min.js"></script>
+    <script src="other css js/jquery-3.5.1.js"></script>
+    <script src="other css js/jquery.dataTables.min.js"></script>
+    <script src="other css js/dataTables.bootstrap5.min.js"></script>
+    <script src="other css js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Items</title>
+    <link rel="stylesheet" href="sell.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="other css js/bootstrap.min.css" />
+    <link rel="stylesheet" href="other css js/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="other css js/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+
+</head>
+
+<body class="body">
+
+    <nav class="navbar bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand bi bi-alt text-warning" href="index.html">New Tech</a>
+            <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="product.html">Products</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu text-bg-dark">
+                            <li><a class="dropdown-item text-light text-bg-dark " href="smartphones.html">Smartphones
+                                    and
+                                    Tablets</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Computers and Laptops</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Audio Devices</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Gaming Consoles and
+                                    Accessories</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Cameras and Photography
+                                    Equipment</a></li>
+                            <li><a class="dropdown-item text-light text-bg-dark" href="#">Smart Home Appliances</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">About Us</a>
+                    </li>
+
+                </ul>
+
+
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark dropdown-toggle ms-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-fill" style="color: rgb(242, 244, 247);"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item bi bi-person-circle" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item bi bi-gear-wide" href="#">Settings</a></li>
+                            <li><a class="dropdown-item bi bi-door-open" href="index.html">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a class="btn text-light" data-bs-toggle="offcanvas" onclick="sell();" role="button"
+                    aria-controls="offcanvasExample">Sell
+                    <i class="" style="color: rgb(242, 244, 247);"></i>
+                </a>
+
+                <a class="btn" data-bs-toggle="offcanvas" onclick="cart();" href="cart.html" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-cart" style="color: rgb(242, 244, 247);"></i>
+                </a>
+
+                <a class="btn" data-bs-toggle="offcanvas" onclick="watchlist();" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-bag-heart" style="color: rgb(242, 244, 247);"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="con1 container">
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <form class="mx-auto">
+                    <div class="col-12 text-center mb-5 mt-5">
+                        <h2 class="fw-bold text-dark">Item Selling</h2>
+                    </div>
+
+                    <div class="offset-lg-4 col-lg-4 col-5 mt-4 mb-4">
+                        <label class="form-lab f2-bold text-dark" for="b">Brand</label>
+                        <input class="form-control" type="text" placeholder="Apple,Samsung,Google..." require id="b">
+                    </div>
+
+                    <div class="offset-lg-4 col-lg-4 col-12 mt-4 mb-4">
+                        <label class="form-lab f2-bold text-dark" for="m">Model</label>
+                        <input class="form-control" type="text" required id="m">
+                    </div>
+
+                    <div class="offset-lg-4 col-lg-4 col-12 mt-4 mb-4">
+                        <label class="form-lab f2-bold text-dark" for="c">Color</label>
+                        <input class="form-control" type="text" required id="c">
+                    </div>
+
+                    <div class=" offset-lg-4 col-lg-4 col-12 mt-4 mb-4">
+                        <label for="formFileMultiple" class="form-label text-dark">Product Images</label>
+                        <input class="form-control" type="file" id="formFileMultiple" required multiple>
+                    </div>
+
+                    <div class="offset-lg-4 col-lg-4 col-12 mt-4 mb-4">
+                        <label class="form-lab f2-bold text-dark" for="p">Price</label>
+                        <input class="form-control" type="text" require id="p">
+                    </div>
+
+                    <div class="condition offset-lg-4 col-lg-4 col-12 mt-4 mb-4">
+                        <label for="condition">Condition</label>
+                        <select class="form-select text-dark" name="condition" id="cars">
+                            <option value="volvo">Brand New</option>
+                            <option value="saab">Open Box</option>
+                            <option value="opel">Used</option>
+                            <option value="audi">For parts or not working</option>
+                        </select>
+                    </div>
+
+                    <div class="offset-lg-4 col-12 col-lg-4">
+                        <div class="row">
+                            <div class="p-1 col-12 d-grid">
+                                <a class="btn btn-info" href="#">List Item</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

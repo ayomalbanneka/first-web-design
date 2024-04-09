@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | New Tech</title>
+    <link rel="stylesheet" href="other css js/bootstrap.min.css" />
+    <link rel="stylesheet" href="other css js/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="other css js/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+            </button>
+            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase text-warning fw-bold bi bi-alt br" href="adminPanel.html">New Tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavBar"
+                aria-controls="topNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <form class="d-flex ms-auto my-3 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-primary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-fill"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item bi bi-gear-wide" href="#" >Settings</a></li>
+                            <li><a class="dropdown-item bi bi-door-open" href="index.html">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+                <ul class="navbar-nav">
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3">
+                            CORE
+                        </div>
+                    </li>
+                    <li>
+                        <a href="adminPanel.html" class="nav-link px-3 active">
+                            <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                            <span>Dashboard</span>
+                        </a>
+                        
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+                            Interface
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#layouts">
+                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                            <span>Layouts</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="bi bi-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="layouts">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="adminPanel.html" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-speedometer2"></i>
+                                        </span>
+                                        <span>Dashboard</span>
+                                    </a>
+
+                                    <a href="manageUsers.html" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-person-fill"></i>
+                                        </span>
+                                        <span>Manage Users</span>
+                                    </a>
+
+                                    <a href="manageProducts.html" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-bag-fill"></i>
+                                        </span>
+                                        <span>Manage Products</span>
+                                    </a>
+
+                                    <a href="addProducts.html" class="nav-link px-3">
+                                        <span class="me-2"><i class="bi bi-bag-fill"></i>
+                                        </span>
+                                        <span>Add Products</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                            <span>Pages</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+                            Addons
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-graph-up"></i></span>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-table"></i></span>
+                            <span>Tables</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <main class="mt-5 pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Dashboard</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="cards card bg-primary text-white h-100">
+                        <div class="card-body py-5 fw-bold">Sales</div>
+                        <div class="text-light fw-bold p-3">200K</div>
+                        <div class="card-footer d-flex">
+                            View Details
+                            <span class="ms-auto">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="cards card bg-warning text-white h-100">
+                        <div class="card-body py-5 fw-bold">Customers</div>
+                        <div class="text-light fw-bold p-3">12.5K</div>
+                        <div class="card-footer d-flex">
+                            View Details
+                            <span class="ms-auto">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="cards card bg-success text-white h-100">
+                        <div class="card-body py-5 fw-bold">Daily Income</div>
+                        <div class="text-light fw-bold p-3">LKR 200,000.00</div>
+                        <div class="card-footer d-flex">
+                            View Details
+                            <span class="ms-auto">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="cards card bg-danger text-white h-100">
+                        <div class="card-body py-5 fw-bold">Revenue</div>
+                        <div class="text-light fw-bold p-3">LKR 6,000,000.00</div>
+                        <div class="card-footer d-flex">
+                            View Details
+                            <span class="ms-auto">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <span><i class="bi bi-table me-2"></i></span> Admin Panel
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example" class="table table-striped data-table" style="width: 100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Last Login</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>2024/03/29</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>2024/03/29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>2024/03/29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric Kelly</td>
+                                            <td>CEO</td>
+                                            <td>2024/03/29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>2024/03/29</td>
+                                        </tr>
+
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Last Login</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="other css js/bootstrap.bundle.min.js"></script>
+    <script src="other css js/jquery-3.5.1.js"></script>
+    <script src="other css js/jquery.dataTables.min.js"></script>
+    <script src="other css js/dataTables.bootstrap5.min.js"></script>
+    <script src="other css js/script.js"></script>
+</body>
+
+</html>

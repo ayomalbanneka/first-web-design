@@ -1,0 +1,48 @@
+.con1{
+    background-color: rgba(0, 0, 0, 0.408);
+    width: 500px;
+    height: 550px;
+    border-radius: 9px;
+}
+
+.body{
+    background-image: url("Resources/CONTACT\ US.jpeg");
+    background-size: 100%;
+}
+
+.div1 {
+    background-color: rgba(0, 0, 0, 0.762);
+    border-radius: 6px;
+    width: 170px;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+.topnav {
+    background-color: #121010bb;
+    overflow: hidden;
+    
+}
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #00fa007a;
+    color: rgb(244, 238, 238);
+}
+
+
+.topnav a.active {
+    background-color: #0e7f8e;
+    color: white;
+}
